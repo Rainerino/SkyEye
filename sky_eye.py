@@ -4,7 +4,7 @@ import os
 from GeoTag import geotag
 import time
 
-DEBUG = True
+DEBUG = False
 
 
 def main():
@@ -24,21 +24,25 @@ def main():
 				print(e)
 
 	if not DEBUG:
-		try:
-			vehicle = dronekit.connect("/dev/ttyUSB0", wait_ready=True, baud=1500000)
+		while True:
+			try:
+				vehicle = dronekit.connect("/dev/ttyUSB0", wait_ready=True, baud=1500000)
+			except:
+				print("Connection failed")
+				time.sleep(3)
+			else:
+				print("Connected")
+				break
 
-			while not vehicle.home_location:
-				cmds = vehicle.commands
-				cmds.download()
-				cmds.wait_ready()
-				if not vehicle.home_location:
-					print(" Waiting for home location ...")
-			# We have a home location, so print it!
-			print("\n Home location: %s" % vehicle.home_location)
-		except:
-			print("Cannot connect!")
-			import sys
-			sys.exit(1)
+		while not vehicle.home_location:
+			cmds = vehicle.commands
+			cmds.download()
+			cmds.wait_ready()
+			if not vehicle.home_location:
+				print(" Waiting for home location ...")
+		# We have a home location, so print it!
+		print("\n Home location: %s" % vehicle.home_location)
+
 
 	vidcap = cv2.VideoCapture(0)
 
