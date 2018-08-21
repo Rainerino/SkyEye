@@ -1,0 +1,1 @@
+# rsync -azP ./from_dir username@host:/to_dir

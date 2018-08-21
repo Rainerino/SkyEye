@@ -1,0 +1,6 @@
+pillow
+dronekit
+dronekit-sitl
+opencv-contrib-python
+pyserial
+pymavlink
