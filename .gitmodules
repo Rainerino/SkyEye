@@ -1,0 +1,3 @@
+[submodule "GeoTag"]
+	path = GeoTag
+	url = https://github.com/wchange22/GeoTag.git

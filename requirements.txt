@@ -1,8 +1,6 @@
 pillow
 dronekit
 dronekit-sitl
-
 pyserial
 pymavlink==2.0.6
 piexif
-pygame
