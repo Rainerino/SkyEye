@@ -6,7 +6,7 @@ python:
 # command to install dependencies
 install:
   - pip3 install opencv-python
-  - pip3 install -r requirements.txt
+  - pip3 install -r ./tools/requirements.txt
 # command to run tests
 script:
   - nosetests -w GeoTag/
