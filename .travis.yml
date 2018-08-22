@@ -9,4 +9,5 @@ install:
   - pip3 install -r requirements.txt
 # command to run tests
 script:
-  - python3 test.py
+  - nosetests -w GeoTag/
+  - nosetests -w test/
