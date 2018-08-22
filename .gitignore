@@ -3,3 +3,5 @@ raw_image/*.JPEG
 processed_image/*.JPEG
 .idea/
 __pycache__/
+
+*.pyc
