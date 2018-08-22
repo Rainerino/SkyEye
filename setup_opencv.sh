@@ -14,9 +14,9 @@
 #conda install -c menpo opencv
 
 
-echo -e "##############################"
-echo -e "#########Installation#########"
-echo -e "##############################"
+echo -e "########################################################################################"
+echo -e "#########                      Installation                                    #########"
+echo -e "########################################################################################"
 
 sudo apt-get update
 sudo apt-get -y upgrade
@@ -30,6 +30,10 @@ sudo apt-get install -y libgtk2.0-dev libgtk-3-dev
 sudo apt-get install -y libatlas-base-dev gfortran
 sudo apt-get install -y python3-dev
 
+echo -e "########################################################################################"
+echo -e "#########                      Download opencv source                          #########"
+echo -e "########################################################################################"
+
 cd ~
 wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.3.0.zip
 unzip opencv.zip
@@ -38,8 +42,15 @@ unzip opencv_contrib.zip
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3 get-pip.py
 
+
+echo -e "########################################################################################"
+echo -e "#########                      Set up virtualenv                               #########"
+echo -e "########################################################################################"
+
+
 sudo pip install virtualenv virtualenvwrapper
 sudo rm -rf ~/.cache/pip
+
 
 echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.profile
 echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.profile
@@ -52,4 +63,7 @@ mkvirtualenv sky_eye3 -p python3
 workon sky_eye3
 pip install numpy
 
-echo "Successful! Please change the swap size"
+echo -e "########################################################################################"
+echo -e "#########     Successful! Please change the swap size, see:        #####################"
+echo -e "https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi"
+echo -e "########################################################################################"

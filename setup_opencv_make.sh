@@ -1,4 +1,7 @@
 
+echo -e "########################################################################################"
+echo -e "#########                      building opencv                                 #########"
+echo -e "########################################################################################"
 
 cd ~/opencv-3.3.0/
 mkdir build
@@ -11,8 +14,12 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 
 make -j4
+
+
 sudo make install
 sudo ldconfig
 
 cd /usr/local/lib/python3.5/site-packages/
 ln -s /usr/local/lib/python3.5/site-packages/cv2.so cv2.so
+
+rm -rf ~/opencv-3.3.0 ~/opencv_contrib-3.3.0
