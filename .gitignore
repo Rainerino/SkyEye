@@ -1,2 +1,4 @@
 venv/
-image/
+raw_image/*.JPEG
+processed_image/*.JPEG
+.idea/

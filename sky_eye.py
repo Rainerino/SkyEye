@@ -7,8 +7,7 @@ import time
 DEBUG = False
 
 
-def main():
-	path_output_dir = "./image"
+def create_or_purge_dir(path_output_dir):
 	if not os.path.exists(path_output_dir):
 		os.makedirs(path_output_dir)
 	else:
@@ -22,6 +21,13 @@ def main():
 			# elif os.path.isdir(file_path): shutil.rmtree(file_path)
 			except Exception as e:
 				print(e)
+
+
+def main():
+	path_output_dir = "./raw_image"
+	create_or_purge_dir(path_output_dir)
+
+	vehicle = None
 
 	if not DEBUG:
 		while True:
@@ -43,6 +49,9 @@ def main():
 		# We have a home location, so print it!
 		print("\n Home location: %s" % vehicle.home_location)
 
+	while not vehicle.armed:
+		print("waiting to be armed")
+		time.sleep(1)
 
 	vidcap = cv2.VideoCapture(0)
 
@@ -51,6 +60,7 @@ def main():
 	while vidcap.isOpened():
 		success, image = vidcap.read()
 		if success:
+
 			current_path = os.path.join(path_output_dir, '%d.JPEG') % count
 			cv2.imwrite(current_path, image)
 
