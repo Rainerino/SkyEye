@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bdbafb2-2969-41f8-9998-3cd0979d9827" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/GeoTag/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoTag" beforeDir="false" afterPath="$PROJECT_DIR$/GeoTag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoTag/geotag.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoTag/geotag.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup_opencv.sh" beforeDir="false" afterPath="$PROJECT_DIR$/setup_opencv.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup_opencv_make.sh" beforeDir="false" afterPath="$PROJECT_DIR$/setup_opencv_make.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +38,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="JPEG" value="5" />
+          <entry key="JPEG" value="6" />
           <entry key="Pipfile" value="1" />
           <entry key="config" value="1" />
           <entry key="gitignore" value="3" />
@@ -49,15 +50,17 @@
           <entry key="sh" value="11" />
           <entry key="txt" value="3" />
           <entry key="xml" value="1" />
+          <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="9" />
+          <entry key="Image" value="10" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="20" />
           <entry key="Python" value="14" />
           <entry key="XML" value="1" />
+          <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -65,14 +68,16 @@
           <entry key="Python Console" value="568" />
           <entry key="gitignore" value="121" />
           <entry key="py" value="3021" />
-          <entry key="sh" value="742" />
+          <entry key="sh" value="794" />
           <entry key="txt" value="92" />
+          <entry key="yml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="955" />
+          <entry key="PLAIN_TEXT" value="1007" />
           <entry key="Python" value="3589" />
+          <entry key="YAML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -102,7 +107,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup_pip.sh">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -115,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup_opencv.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="872">
-              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state relative-caret-position="284">
+              <caret line="65" selection-start-line="65" selection-end-line="68" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -124,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup_opencv_make.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+            <state relative-caret-position="338">
+              <caret line="27" column="98" selection-start-line="27" selection-start-column="98" selection-end-line="27" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -133,14 +138,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/undistortImages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="408">
+              <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#548#630#0" />
                 <marker date="1534916299754" expanded="true" signature="147:149" ph="..." />
                 <marker date="1534916299754" expanded="true" signature="529:648" ph="..." />
                 <marker date="1534916299754" expanded="true" signature="831:833" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -206,6 +221,7 @@
         <option value="$PROJECT_DIR$/setup.sh" />
         <option value="$PROJECT_DIR$/setup_opencv.sh" />
         <option value="$PROJECT_DIR$/setup_opencv_make.sh" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -394,13 +410,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33173078" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6442308" visible="true" weight="0.21618626" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6442308" weight="0.26718405" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -409,7 +426,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49786323" weight="0.3292683" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.35576922" side_tool="true" weight="0.40354767" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.7019231" weight="0.31485587" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.7019231" visible="true" weight="0.26940134" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.74786323" weight="0.41019955" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -474,9 +491,6 @@
     <entry file="file://$PROJECT_DIR$/processed_image/7.JPEG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/processed_image/4.JPEG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/out_camera_data.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -503,19 +517,6 @@
           <caret line="215" column="26" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="26" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/undistortImages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1534916299754" expanded="true" signature="147:149" ph="..." />
-            <marker date="1534916299754" expanded="true" signature="529:648" ph="..." />
-            <marker date="1534916299754" expanded="true" signature="831:833" ph="..." />
           </folding>
         </state>
       </provider>
@@ -552,25 +553,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup_opencv_make.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup_opencv.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="872">
-          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setup.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/processed_image/4.JPEG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/setup_pip.sh">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup_opencv.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="65" selection-start-line="65" selection-end-line="68" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup_opencv_make.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="27" column="98" selection-start-line="27" selection-start-column="98" selection-end-line="27" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/undistortImages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#548#630#0" />
+            <marker date="1534916299754" expanded="true" signature="147:149" ph="..." />
+            <marker date="1534916299754" expanded="true" signature="529:648" ph="..." />
+            <marker date="1534916299754" expanded="true" signature="831:833" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

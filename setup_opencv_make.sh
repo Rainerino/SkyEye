@@ -23,3 +23,7 @@ cd /usr/local/lib/python3.5/site-packages/
 ln -s /usr/local/lib/python3.5/site-packages/cv2.so cv2.so
 
 rm -rf ~/opencv-3.3.0 ~/opencv_contrib-3.3.0
+
+echo -e "########################################################################################"
+echo -e !!!!!!!!!!     Please change back the swap size, see:                !!!!!!!!!!!!!!!!!!!!"
+echo -e "########################################################################################"
